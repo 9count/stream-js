@@ -180,7 +180,6 @@ export class Feed {
   subscribe(callback: (data: object) => void): Promise<object>;
 
   // Get tokens
-  createUserToken(userId: string): string;
   getReadOnlyToken(): string;
   getReadWriteToken(): string;
 }
@@ -202,6 +201,7 @@ export class StreamClient {
   userAgent(): string;
 
   // Get feed tokens
+  createUserToken(userId: string): string;
   getReadOnlyToken(feedSlug: string, userId: string): string;
   getReadWriteToken(feedSlug: string, userId: string): string;
 
