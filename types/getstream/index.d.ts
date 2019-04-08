@@ -8,7 +8,7 @@ export as namespace stream;
 export function connect(
   apiKey: string,
   apiSecret: string | null,
-  appId: string,
+  appId?: string,
   options?: object,
 ): stream.Client;
 
