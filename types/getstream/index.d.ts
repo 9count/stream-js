@@ -180,6 +180,7 @@ export class Feed {
   subscribe(callback: (data: object) => void): Promise<object>;
 
   // Get tokens
+  createUserToken(userId: string): string;
   getReadOnlyToken(): string;
   getReadWriteToken(): string;
 }
@@ -218,6 +219,7 @@ export class StreamClient {
     activities: object[],
     callback: (args: object[]) => void,
   ): void;
+  activityPartialUpdate(data: object): Promise<object>
 
   // Add activity to many feeds
   /**
