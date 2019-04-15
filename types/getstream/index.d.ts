@@ -219,7 +219,7 @@ export class StreamClient {
     activities: object[],
     callback: (args: object[]) => void,
   ): void;
-  activityPartialUpdate(data: object): Promise<object>
+  activityPartialUpdate(data: object): Promise<object>;
 
   // Add activity to many feeds
   /**
@@ -271,6 +271,8 @@ export class StreamClient {
     unfollows: object[],
     callback?: (err: object, httpResponse: object, body: object) => void,
   ): void;
+
+  reactions: any;
 }
 
 // Export the Stream Client
