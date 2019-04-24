@@ -273,6 +273,7 @@ export class StreamClient {
   ): void;
 
   reactions: any;
+  user: any;
 }
 
 // Export the Stream Client
